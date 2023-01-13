@@ -232,6 +232,8 @@ function createWindow() {
             nodeIntegration: true,
             contextIsolation: false
         },
+        fullscreenable: false,
+        resizable: false,
         backgroundColor: '#171614'
     })
     remoteMain.enable(win.webContents)

@@ -6,11 +6,22 @@ const {Client} = require('discord-rpc-patch')
 let client
 let activity
 
-exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
-    client = new Client({ transport: 'ipc' })
-
+/** @type {string[]} */
+let detailRotates = [];
+setInterval(() => {
+    if (activity && client) {
+        const curIdx = detailRotates.findIndex(v => v === activity.details);
+        const nextIdx = (curIdx + 1) % detailRotates.length;
+        activity.details = detailRotates[nextIdx];
+        client.setActivity(activity)
+    }
+}, 10000);
+exports.initRPC = function(genSettings, servSettings, initialDetails = '하나비 실행 중 ...'){
+    client = new Client({ transport: 'ipc' });
+    
+    detailRotates = [initialDetails];
     activity = {
-        details: initialDetails,
+        details: detailRotates[0],
         state: 'Server: ' + servSettings.shortId,
         largeImageKey: servSettings.largeImageKey,
         largeImageText: servSettings.largeImageText,
@@ -35,7 +46,12 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting 
 }
 
 exports.updateDetails = function(details){
-    activity.details = details
+    if (typeof details === "string") {
+        detailRotates = [details];
+    } else {
+        detailRotates = [...details];
+    }
+    activity.details = detailRotates[0];
     client.setActivity(activity)
 }
 

@@ -1,0 +1,215 @@
+#main {
+  background: none !important;
+}
+
+#custom_news {
+  position: absolute;
+  left: 11px;
+  top: 65px;
+
+  padding: 15px;
+  width: 277px;
+  height: 320px;
+
+  background-color: #000a;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#custom_news > div {
+  display: inline-block;
+
+  width: 100%;
+  aspect-ratio: 1.777 / 1;
+
+  background-image: url("../images/custom/640\ x\ 360\ sample.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  cursor: pointer;
+}
+#custom_news > div:hover {
+  filter: brightness(1.5);
+}
+
+#custom_nav {
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+  
+  display: flex;
+  align-items: center;
+
+  height: 44px;
+  width: 80%;
+}
+#custom_nav > span {
+  display: inline-block;
+}
+#avatarContainer {
+  width: 35px;
+  height: 35px;
+
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#user_text {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#nav_website {
+  width: 129px;
+  height: 44px;
+  background-image: url("../images/custom/homepage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  cursor: pointer;
+}
+#nav_discord {
+  width: 102px;
+  height: 44px;
+  background-image: url("../images/custom/discord.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  cursor: pointer;
+}
+#settingsMediaButton {
+  width: 111px;
+  height: 44px;
+  background-image: url("../images/custom/setting.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  cursor: pointer;
+}
+#nav_website:hover {
+  filter: drop-shadow(0 0 1px #888);
+}
+#nav_discord:hover {
+  filter: drop-shadow(0 0 1px #888);
+}
+#settingsMediaButton:hover {
+  filter: drop-shadow(0 0 1px #888);
+}
+
+#custom_launch_content {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+#launch_button {
+  width: 170px;
+  height: 170px;
+
+  background-image: url("../images/custom/start.png");
+  background-size: contain;
+
+  cursor: pointer;
+}
+#launch_button:hover {
+  filter: drop-shadow(0 0 1px #fff);
+}
+
+#settingsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#custom-settings {
+  position: relative;
+
+  width: 92%;
+  height: 87%;
+  padding: 1.5% 1.5%;
+
+  background-color: #000a;
+}
+#settingsNavDone {
+  position: absolute;
+  top: calc(3% - 2vmin);
+  right: calc(3% - 2vmin);
+  padding: 2vmin;
+  border-radius: 50%;
+  
+  color: #ffaaaa;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: text-shadow 0.2s ease-in;
+}
+#settingsNavDone:hover {
+  text-shadow: 0 0 0.3vmax #fff;
+}
+
+#settings__login {
+  display: inline-block;
+  width: 100%;
+  height: 30%;
+}
+#settings__login-info {
+  height: 30%;
+  aspect-ratio: 167 / 59;
+
+  background-image: url("../images/custom/settingLoginInfoTxt.png");
+  background-size: cover;
+}
+
+#settings__mem-settings {
+  display: inline-block;
+  width: 100%;
+  height: 50%;
+}
+#settings__mem-text {
+  height: 14%;
+  aspect-ratio: 370 / 37;
+
+  background-image: url("../images/custom/settingMemorySettingText.png");
+  background-size: cover;
+}
+.settins__mem-box {
+  height: 30%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settins__mem-box > div:nth-child(1) {
+  width: 20%;
+
+  background-size: cover;
+}
+#settings__mem-min__text {
+  aspect-ratio: 186 / 25;
+  background-image: url("../images/custom/settingMemoryMinimum.png");
+}
+#settings__mem-max__text {
+  aspect-ratio: 149 / 18;
+  background-image: url("../images/custom/settingMemoryMaximum.png");
+}
+.settingsMemoryLabel {
+  width: 14%;
+  
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: cetner;
+}
+
+#settings__java-settings {
+  display: inline-block;
+  width: 100%;
+  height: 20%;
+}
+#settings__java-text {
+  height: 35%;
+  aspect-ratio: 350 / 35;
+
+  background-image: url("../images/custom/settingJavaPath.png");
+  background-size: cover;
+}

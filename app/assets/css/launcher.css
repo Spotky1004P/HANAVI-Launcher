@@ -1053,7 +1053,6 @@ body, button {
     position: relative;
     height: 100%;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.50);
     transition: background-color 0.25s cubic-bezier(.02, .01, .47, 1);
 }
 
@@ -1156,7 +1155,7 @@ body, button {
 }
 
 /* Settings done button styles. */
-#settingsNavDone {
+/* #settingsNavDone {
     background: none;
     border: none;
     text-align: left;
@@ -1178,7 +1177,7 @@ body, button {
 #settingsNavDone:disabled {
     color: rgba(255, 255, 255, 0.75);
     pointer-events: none;
-}
+} */
 
 /* Right hand side of the settings container, for tabs. */
 #settingsContainerRight {
@@ -1563,7 +1562,7 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Image of the auth account's skin. */
 .settingsAuthAccountImage {
-    height: 115px;
+    height: 70px;
 }
 
 /* Right hand side of the auth account, for info + actions. */
@@ -1581,7 +1580,7 @@ input:checked + .toggleSwitchSlider:before {
     width: 100%;
 }
 .settingsAuthAccountDetails > *:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 /* Account detail element styles. */
@@ -2033,15 +2032,15 @@ input:checked + .toggleSwitchSlider:before {
 }
 
 /* Label which displays a memory slider's value. */
-.settingsMemoryLabel {
+/* .settingsMemoryLabel {
     font-size: 14px;
     margin-right: 2%;
-}
+} */
 
 /* Range sliders for min and max memory settings. */
 #settingsMaxRAMRange,
 #settingsMinRAMRange {
-    width: 85%;
+    width: 60%;
 }
 
 /* Memory status elements. */
@@ -2968,22 +2967,6 @@ input:checked + .toggleSwitchSlider:before {
     position: relative;
 }
 
-/* User profile avatar container. */
-#avatarContainer {
-    border-radius: 50%;
-    border: 2px solid #cad7e1;
-    box-sizing: border-box;
-    background: rgba(1, 2, 1, 0.5);
-    height: 70px;
-    width: 70px;
-    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
-    overflow: hidden;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 /* Avatar edit overlay. */
 #avatarOverlay {
     opacity: 0;
@@ -3009,19 +2992,6 @@ input:checked + .toggleSwitchSlider:before {
 }
 #avatarOverlay:active {
     background-color: rgba(0, 0, 0, 0.45);
-}
-
-/* User profile name text. */
-#user_text {
-    font-size: 12px;
-    min-width: 135px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-shadow: 0px 0px 20px black;
-    position: absolute;
-    right: 95px;
-    text-align: right;
-    -webkit-user-select: initial;
 }
 
 /* Social media icon content container. */
@@ -3423,8 +3393,6 @@ input:checked + .toggleSwitchSlider:before {
 /* Launch details main container, hidden until launch processing begins. */
 #launch_details {
     position: relative;
-    top: 25px;
-    display: none;
 }
  
 /* Left side of launch details container, displays percentage and a divider. */

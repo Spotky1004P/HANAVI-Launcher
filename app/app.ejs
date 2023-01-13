@@ -4,7 +4,9 @@
     <title>Helios Launcher</title>
     <script src="./assets/js/scripts/uicore.js"></script>
     <script src="./assets/js/scripts/uibinder.js"></script>
+    <script src="./assets/js/scripts/custom.js" defer></script>
     <link type="text/css" rel="stylesheet" href="./assets/css/launcher.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/custom.css">
     <style>
         body {
             /*background: url('assets/images/backgrounds/<%=bkid%>.jpg') no-repeat center center fixed;*/
@@ -44,6 +46,11 @@
                 <img id="loadSpinnerImage" class="rotating" src="assets/images/LoadingText.png">
             </div>
         </div>
+    </div>
+    <div stlye="display: none;">
+        <audio id="audio__ui-click" src="./assets/sounds/uiClick.wav"></audio>
+        <audio id="audio__ui-hover" src="./assets/sounds/uiHover.wav"></audio>
+        <audio id="audio__ui-bg" src="./assets/sounds/bgm.wav"></audio>
     </div>
     <script>
         // Load language
