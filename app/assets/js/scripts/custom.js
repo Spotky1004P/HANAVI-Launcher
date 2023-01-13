@@ -96,7 +96,7 @@ const elToAddSound = [
 ];
 for (const el of elToAddSound) {
   soundWorker(el, "mouseenter", sounds.hover);
-  soundWorker(el, "click", sounds.bg);
+  soundWorker(el, "click", sounds.click);
 }
 const bg = new BackgrounMusic(sounds.bg);
 bg.play();
