@@ -30,6 +30,9 @@
 
   cursor: pointer;
 }
+#custom_news > div:nth-child(1) {
+  background-image: url("../images/custom/announce.png");
+}
 #custom_news > div:hover {
   filter: brightness(1.5);
 }

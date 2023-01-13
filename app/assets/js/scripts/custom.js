@@ -1,8 +1,8 @@
 const electron = require('electron');
 
 function hrefWorker(el) {
-  const link = el.getAttribute("href");
   el.addEventListener("click", () => {
+    const link = el.getAttribute("href");
     electron.shell.openExternal(link);
   })
 }
