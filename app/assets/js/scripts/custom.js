@@ -87,6 +87,8 @@ const sounds = {
 
 hrefWorker(els.landing.website);
 hrefWorker(els.landing.discord);
+hrefWorker(els.news.news1);
+hrefWorker(els.news.news2);
 
 const elToAddSound = [
   els.news.news1, els.news.news2,
